@@ -20,10 +20,10 @@
   </text>
 
   <text x="30" y="70" class="label">├─ ⭐ Stars      :</text>
-  <text x="200" y="70" class="value">0</text>
+  <text x="200" y="70" class="value">1</text>
 
   <text x="30" y="100" class="label">├─ 📦 Repos      :</text>
-  <text x="200" y="100" class="value">1</text>
+  <text x="200" y="100" class="value">2</text>
 
   <text x="30" y="130" class="label">├─ 👥 Followers  :</text>
   <text x="200" y="130" class="value">0</text>
