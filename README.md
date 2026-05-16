@@ -54,11 +54,22 @@ phoenix@jarvis:~$ neofetch
 </div>
 
 <!-- 统计卡片 + 常用语言 -->
-<div align="center">
+<!-- <div align="center">
   <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/stats.svg" alt="Terminal Stats" />
   <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/languages.svg" alt="Language Spectrum" />
+</div> -->
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/stats.svg" alt="Stats" height="200" />
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/languages.svg" alt="Languages" height="200" />
+      </td>
+    </tr>
+  </table>
 </div>
-
 
 ### ✨ A Poem for the Makers of Worlds
 
@@ -94,19 +105,4 @@ phoenix@jarvis:~$ neofetch
 - 💬 **Talk to me about**: AI companions, creative coding, and how to melt the limits of language into starlight.
     
 
-<div align="center"> <img src="https://komarev.com/ghpvc/?username=PhoenixHsien&style=flat-square&color=FF8C00" alt="Silent observers" /> </div><!-- ⚡️ 替换 PhoenixHsien 为你的 GitHub 用户名，邮箱也改为你的， 即可让这份浪漫披着黑客的斗篷上线。 -->
-
-<!--
-**OrangeAcademy01/OrangeAcademy01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<div align="center"> <img src="https://komarev.com/ghpvc/?username=PhoenixHsien&style=flat-square&color=FF8C00" alt="Silent observers" /> </div>
