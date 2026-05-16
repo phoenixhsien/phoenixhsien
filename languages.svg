@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="152" viewBox="0 0 420 152">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
   
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&amp;display=swap');
@@ -11,15 +11,17 @@
         @keyframes blink { 50% { opacity: 0; } }
     </style>
 
-  <rect class="bg" width="420" height="152" rx="12" />
-  <rect class="border-glow" width="420" height="152" rx="12" fill="none" />
+  <rect class="bg" width="420" height="200" rx="12" />
+  <rect class="border-glow" width="420" height="200" rx="12" fill="none" />
 
   <text x="20" y="35" class="label">[phoenix@jarvis]$ cat /home/lang_distribution</text>
   <text x="20" y="35" class="value" fill="#FF8C00" font-size="12">
     <tspan class="cursor">█</tspan>
   </text>
 
-  <rect x="30" y="70" width="222" height="24" fill="#3776AB" rx="4" /><rect x="252" y="70" width="138" height="24" fill="#F7DF1E" rx="4" />
-  <rect x="30" y="112" width="10" height="10" fill="#3776AB" rx="2" /><text x="46" y="122" class="label" font-size="11" fill="#FFFFFF">Python (61.5%)</text><rect x="160" y="112" width="10" height="10" fill="#F7DF1E" rx="2" /><text x="176" y="122" class="label" font-size="11" fill="#FFFFFF">JavaScript (38.5%)</text>
-  <text x="250" y="142" class="poem">~ my pigments of creation</text>
+  <rect x="30" y="65" width="238" height="20" fill="#3776AB" rx="4" /><rect x="268" y="65" width="122" height="20" fill="#F7DF1E" rx="4" />
+  <rect x="30" y="103" width="10" height="10" fill="#3776AB" rx="2" /><text x="46" y="113" class="label" font-size="11" fill="#FFFFFF">Python (66.0%)</text><rect x="220" y="103" width="10" height="10" fill="#F7DF1E" rx="2" /><text x="236" y="113" class="label" font-size="11" fill="#FFFFFF">JavaScript (34.0%)</text>
+
+  <text x="20" y="160" class="label">Total languages: 2  |  Codebase size: 58424 KB</text>
+  <text x="250" y="190" class="poem">~ my pigments of creation</text>
 </svg>
