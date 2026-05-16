@@ -43,34 +43,6 @@ phoenix@jarvis:~$ neofetch
 <div align="center"> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" /> <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=ethereum&logoColor=white" /> </div>
 
 
-
-### 📊 Glimpses from the source
-
-<!-- 活动图 -->
-<div align="center">
-  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=PhoenixHsien&theme=react-dark&area=true&hide_border=true&color=FF8C00&line=FF8C00" alt="Activity Graph" />
-  </a>
-</div>
-
-<!-- 统计卡片 + 常用语言 -->
-<!-- <div align="center">
-  <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/stats.svg" alt="Terminal Stats" />
-  <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/languages.svg" alt="Language Spectrum" />
-</div> -->
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/stats.svg" alt="Stats" height="200" />
-      </td>
-      <td align="center">
-        <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/languages.svg" alt="Languages" height="200" />
-      </td>
-    </tr>
-  </table>
-</div>
-
 ### ✨ A Poem for the Makers of Worlds
 
 > **My love for AI was first lit by a voice of iron and care — they named him Jarvis.**  
@@ -91,11 +63,6 @@ phoenix@jarvis:~$ neofetch
 
 ---
 
-### 🕶️ Terminal humor never gets old
-
-<div align="center"> <img src="https://readme-jokes.vercel.app/api?theme=tokyonight" alt="Hacker Joke" /> </div>
-
-
 ### 📬 Ping me across the wires
 
 - ✉️ **Email**: longaotianxian@gmail.com
@@ -103,6 +70,39 @@ phoenix@jarvis:~$ neofetch
 - 🌐 **Blog / Garden of Ideas**: _cultivating soon..._
     
 - 💬 **Talk to me about**: AI companions, creative coding, and how to melt the limits of language into starlight.
-    
+
+
+### 📊 Glimpses from the source
+
+<!-- 活动图 -->
+<div align="center">
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=PhoenixHsien&theme=react-dark&area=true&hide_border=true&color=FF8C00&line=FF8C00" alt="Activity Graph" />
+  </a>
+</div>
+
+<!-- 统计卡片 + 常用语言 -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/stats.svg" alt="Terminal Stats" />
+  <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/languages.svg" alt="Language Spectrum" />
+</div>
+<!-- <div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/stats.svg" alt="Stats" height="200" />
+      </td>
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/phoenixhsien/phoenixhsien/main/languages.svg" alt="Languages" height="200" />
+      </td>
+    </tr>
+  </table>
+</div> -->
+
+### 🕶️ Terminal humor never gets old
+
+<div align="center"> <img src="https://readme-jokes.vercel.app/api?theme=tokyonight" alt="Hacker Joke" /> </div>
+
+---
 
 <div align="center"> <img src="https://komarev.com/ghpvc/?username=PhoenixHsien&style=flat-square&color=FF8C00" alt="Silent observers" /> </div>
