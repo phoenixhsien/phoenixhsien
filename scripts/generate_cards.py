@@ -71,12 +71,76 @@ def draw_stats_card(data):
 </svg>'''
     return svg
 
-# ---------- 卡片2：语言比例条（反应堆风格） ----------
+# # ---------- 卡片2：语言比例条（反应堆风格） ----------
+# def draw_languages_card(lang_bytes):
+#     if not lang_bytes:
+#         return '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="50"><text x="10" y="30" fill="#FF8C00">No languages</text></svg>'
+
+#     total = sum(lang_bytes.values())
+#     sorted_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:5]
+
+#     colors = {
+#         "Python": "#3776AB",
+#         "Java": "#ED8B00",
+#         "C": "#00599C",
+#         "JavaScript": "#F7DF1E",
+#         "TypeScript": "#3178C6",
+#         "Rust": "#DEA584",
+#         "Go": "#00ADD8",
+#         "Kotlin": "#A97BFF",
+#         "Swift": "#F05138",
+#         "Blockchain": "#FF8C00"
+#     }
+
+#     bar_y = 70
+#     bar_height = 24
+#     x_start = 30
+#     bar_width = 360
+#     rects = ""
+#     x = x_start
+#     for lang, bytes_count in sorted_langs:
+#         ratio = bytes_count / total
+#         w = max(bar_width * ratio, 4)
+#         color = colors.get(lang, "#FF8C00")
+#         rects += f'<rect x="{x:.0f}" y="{bar_y}" width="{w:.0f}" height="{bar_height}" fill="{color}" rx="4" />'
+#         x += w
+
+#     legend = ""
+#     y = bar_y + bar_height + 18
+#     x = x_start
+#     for lang, bytes_count in sorted_langs:
+#         color = colors.get(lang, "#FF8C00")
+#         pct = bytes_count / total * 100
+#         legend += f'<rect x="{x}" y="{y}" width="10" height="10" fill="{color}" rx="2" />'
+#         legend += f'<text x="{x+16}" y="{y+10}" class="label" font-size="11" fill="#FFFFFF">{lang} ({pct:.1f}%)</text>'
+#         x += 130
+#         if x > x_start + 260:
+#             x = x_start
+#             y += 22
+
+#     svg_height = max(y + 40, 130)
+#     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="{svg_height}" viewBox="0 0 420 {svg_height}">
+#   {COMMON_STYLE}
+#   <rect class="bg" width="420" height="{svg_height}" rx="12" />
+#   <rect class="border-glow" width="420" height="{svg_height}" rx="12" fill="none" />
+
+#   <text x="20" y="35" class="label">[phoenix@jarvis]$ cat /home/lang_distribution</text>
+#   <text x="20" y="35" class="value" fill="#FF8C00" font-size="12">
+#     <tspan class="cursor">█</tspan>
+#   </text>
+
+#   {rects}
+#   {legend}
+#   <text x="250" y="{svg_height-10}" class="poem">~ my pigments of creation</text>
+# </svg>'''
+#     return svg
+
+# ---------- 卡片2：语言比例条（固定高度 200，左侧与统计卡片对齐）----------
 def draw_languages_card(lang_bytes):
     if not lang_bytes:
-        return '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="50"><text x="10" y="30" fill="#FF8C00">No languages</text></svg>'
+        return '<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200"><text x="20" y="50" fill="#FF8C00" font-family="monospace" font-size="14">No languages</text></svg>'
 
-    total = sum(lang_bytes.values())
+    total_bytes = sum(lang_bytes.values())
     sorted_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:5]
 
     colors = {
@@ -92,37 +156,46 @@ def draw_languages_card(lang_bytes):
         "Blockchain": "#FF8C00"
     }
 
-    bar_y = 70
-    bar_height = 24
+    # 比例条参数
+    bar_y = 65
+    bar_height = 20
     x_start = 30
     bar_width = 360
     rects = ""
     x = x_start
     for lang, bytes_count in sorted_langs:
-        ratio = bytes_count / total
+        ratio = bytes_count / total_bytes
         w = max(bar_width * ratio, 4)
         color = colors.get(lang, "#FF8C00")
         rects += f'<rect x="{x:.0f}" y="{bar_y}" width="{w:.0f}" height="{bar_height}" fill="{color}" rx="4" />'
         x += w
 
+    # 图例（两列布局，节约空间）
     legend = ""
-    y = bar_y + bar_height + 18
-    x = x_start
-    for lang, bytes_count in sorted_langs:
+    y_legend_start = bar_y + bar_height + 18
+    x_legend_left = x_start
+    x_legend_right = 220
+    col = 0
+    for i, (lang, bytes_count) in enumerate(sorted_langs):
         color = colors.get(lang, "#FF8C00")
-        pct = bytes_count / total * 100
-        legend += f'<rect x="{x}" y="{y}" width="10" height="10" fill="{color}" rx="2" />'
-        legend += f'<text x="{x+16}" y="{y+10}" class="label" font-size="11" fill="#FFFFFF">{lang} ({pct:.1f}%)</text>'
-        x += 130
-        if x > x_start + 260:
-            x = x_start
-            y += 22
+        pct = bytes_count / total_bytes * 100
+        if col == 0:
+            lx = x_legend_left
+        else:
+            lx = x_legend_right
+        ly = y_legend_start + (i // 2) * 22
+        legend += f'<rect x="{lx}" y="{ly}" width="10" height="10" fill="{color}" rx="2" />'
+        legend += f'<text x="{lx+16}" y="{ly+10}" class="label" font-size="11" fill="#FFFFFF">{lang} ({pct:.1f}%)</text>'
+        col = 1 - col
 
-    svg_height = max(y + 40, 130)
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="{svg_height}" viewBox="0 0 420 {svg_height}">
+    # 总语言数统计
+    total_langs = len(lang_bytes)
+    stats_text = f"Total languages: {total_langs}  |  Codebase size: {total_bytes//1024} KB"
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200">
   {COMMON_STYLE}
-  <rect class="bg" width="420" height="{svg_height}" rx="12" />
-  <rect class="border-glow" width="420" height="{svg_height}" rx="12" fill="none" />
+  <rect class="bg" width="420" height="200" rx="12" />
+  <rect class="border-glow" width="420" height="200" rx="12" fill="none" />
 
   <text x="20" y="35" class="label">[phoenix@jarvis]$ cat /home/lang_distribution</text>
   <text x="20" y="35" class="value" fill="#FF8C00" font-size="12">
@@ -131,7 +204,9 @@ def draw_languages_card(lang_bytes):
 
   {rects}
   {legend}
-  <text x="250" y="{svg_height-10}" class="poem">~ my pigments of creation</text>
+
+  <text x="20" y="160" class="label">{stats_text}</text>
+  <text x="250" y="190" class="poem">~ my pigments of creation</text>
 </svg>'''
     return svg
 
