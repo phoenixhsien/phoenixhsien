@@ -19,7 +19,7 @@
     <tspan class="cursor">█</tspan>
   </text>
 
-  <rect x="30" y="70" width="360" height="24" fill="#3776AB" rx="4" />
-  <rect x="30" y="112" width="10" height="10" fill="#3776AB" rx="2" /><text x="46" y="122" class="label" font-size="11" fill="#FFFFFF">Python (100.0%)</text>
+  <rect x="30" y="70" width="222" height="24" fill="#3776AB" rx="4" /><rect x="252" y="70" width="138" height="24" fill="#F7DF1E" rx="4" />
+  <rect x="30" y="112" width="10" height="10" fill="#3776AB" rx="2" /><text x="46" y="122" class="label" font-size="11" fill="#FFFFFF">Python (61.5%)</text><rect x="160" y="112" width="10" height="10" fill="#F7DF1E" rx="2" /><text x="176" y="122" class="label" font-size="11" fill="#FFFFFF">JavaScript (38.5%)</text>
   <text x="250" y="142" class="poem">~ my pigments of creation</text>
 </svg>
