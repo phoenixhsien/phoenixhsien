@@ -19,9 +19,9 @@
     <tspan class="cursor">█</tspan>
   </text>
 
-  <rect x="30" y="65" width="360" height="20" fill="#F7DF1E" rx="4" /><rect x="390" y="65" width="4" height="20" fill="#3776AB" rx="4" />
-  <rect x="30" y="103" width="10" height="10" fill="#F7DF1E" rx="2" /><text x="46" y="113" class="label" font-size="11" fill="#FFFFFF">JavaScript (99.9%)</text><rect x="220" y="103" width="10" height="10" fill="#3776AB" rx="2" /><text x="236" y="113" class="label" font-size="11" fill="#FFFFFF">Python (0.1%)</text>
+  <rect x="30" y="65" width="238" height="20" fill="#3776AB" rx="4" /><rect x="268" y="65" width="122" height="20" fill="#F7DF1E" rx="4" />
+  <rect x="30" y="103" width="10" height="10" fill="#3776AB" rx="2" /><text x="46" y="113" class="label" font-size="11" fill="#FFFFFF">Python (66.0%)</text><rect x="220" y="103" width="10" height="10" fill="#F7DF1E" rx="2" /><text x="236" y="113" class="label" font-size="11" fill="#FFFFFF">JavaScript (34.0%)</text>
 
-  <text x="20" y="160" class="label">Total languages: 2  |  Codebase size: 19891 KB</text>
+  <text x="20" y="160" class="label">Total languages: 2  |  Codebase size: 58441 KB</text>
   <text x="250" y="190" class="poem">~ my pigments of creation</text>
 </svg>
